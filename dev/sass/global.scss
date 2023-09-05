@@ -69,7 +69,7 @@ ol {
     counter-reset: li;
     li {
         list-style: none;
-        &:before {
+        &:not([class]):before{
             content: counter(li, decimal) ".";
             counter-increment: li;
             color: $color-secondary;   
@@ -83,7 +83,7 @@ ol {
 ul {
     li{
         list-style: none;
-        &:before {
+        &:not([class]):before{
             content: "";
             background-color: $color-secondary;   
             margin-right: 12px;
