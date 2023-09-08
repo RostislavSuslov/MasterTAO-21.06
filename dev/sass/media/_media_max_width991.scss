@@ -1,34 +1,47 @@
 @media screen and (max-width: 991px) {
+    .container {
+        padding: 0 20px;
+    }
     header {
         .navbar {
-            padding: 17px 0 15px;
+            padding: 16px 0 15px;
 
             .btn {
                 margin-bottom: 60px;
+                max-width: 295px;
+                width: 100%;
+                justify-content: center;
+                padding: 22px 26px;
+                letter-spacing: 0.5px;
             }
         }
 
         .navbar-nav {
 
-            margin: 37px auto 34px;
+            margin: 37px auto 21px;
         }
+
+        .nav-link {
+            color: #fff;
+            line-height: 222%;
+            font-size: 24px;
+            padding: 0 0 11px;
+        }
+
     }
 
     .logo {
         img {
-            max-height: 35px;
+            max-height: 36px;
         }
     }
-
-    .navbar-toggler {
-        padding: 0.25rem;
-        background-color: rgb(255, 179, 179);
-    }
+   
+    
 
     #navbarSupportedContent {
-        margin: 0 -15px;
+        margin: 0 -20px;
         text-align: center;
         background-color: $bg-secondary;
-        transform: translate(0, 15px);
+        transform: translate(0, 16px);
     }
 }
