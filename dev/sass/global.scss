@@ -419,12 +419,12 @@ section {
     }
 
     &.container-fluid {
-
         padding: 90px 85px 100px;
         position: relative;
-
+        
         &:before {
             content: "";
+            border-radius: 20px;
             position: absolute;
             left: 42px;
             right: 42px;
@@ -447,14 +447,12 @@ section {
 
 .template-title {
     text-align: center;
-    color: #FFFFFF;
     position: relative;
     padding-bottom: 18px;
     margin-bottom: 50px;
 
     h2 {
-        font-weight: 700;
-        font-size: 36px;
+ 
         line-height: 124.5%;
         text-transform: uppercase;
         margin-bottom: 6px;
