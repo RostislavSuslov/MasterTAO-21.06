@@ -7,7 +7,12 @@ burger.addEventListener('click', function() {
 
 
 $(document).ready(function() {
-    $('.first-screen').slick();
+    $('.first-screen').slick({
+        infinite: true,
+        dots: true,
+        appendArrows: '.first-screen-nav'
+    });
+    $('.first-screen').append($('.first-screen-nav'));
 
 
     mobileOnlySlider("#advanages-slider", true, false, 1024);
