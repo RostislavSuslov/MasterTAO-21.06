@@ -1,0 +1,31 @@
+.first-screen {
+    @extend section;
+    &__title {
+        @extend h1; 
+        margin-bottom: 8px;
+        max-width: 463px;
+    }
+    
+    &__subtitle {
+        margin-bottom: 37px;
+        max-width: 345px;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 135.5%;  
+    }
+     
+    
+    &__item {
+        min-height: 700px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+        max-width: calc(100% - 84px);
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        padding-bottom: 70px;
+    }
+}
