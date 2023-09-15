@@ -1,15 +1,18 @@
-
 .advanage-row {
     margin-top: -24px;
-    margin-bottom: -24px    ;
+    margin-bottom: -24px;
 }
-.advanage {    display: flex;
+
+.advanage {
+    display: flex;
     flex-direction: column;
     text-align: center;
     margin: 24px auto;
     max-width: 263px;
     padding: 0 12px;
+
     &-img-box {
+        
         width: 93px;
         height: 93px;
         display: flex;
@@ -19,6 +22,8 @@
         border-radius: 50%;
         margin: 10px auto 32px;
         position: relative;
+        padding: 15px;
+
         &:before {
             content: "";
             border: 1px solid #6C7188;
@@ -31,6 +36,14 @@
             border-radius: 50%;
         }
     }
-}
 
- 
+    .advantage-img {
+        max-width: 100%;
+    }
+}
+#advanages-slider {
+    .slick-dots {
+        padding: 0;
+        margin: 15px 0;
+    }
+}
