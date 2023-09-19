@@ -5,13 +5,61 @@ burger.addEventListener('click', function() {
 })
 
 document.getElementById('fileInput').onchange = function () {
-  
     //short name
     // document.getElementById('file-name').innerHTML = this.files[0].name;
-    
-    //long name
     document.getElementById('file-name').innerHTML = this.value;
 };
+
+
+
+ 
+
+ 
+const checkButtons = document.querySelectorAll('.check-button');
+console.log(checkButtons);
+
+checkButtons.forEach(item => {
+  const colParent = item.closest('.col-lg-6');
+   colParent ? colParent.classList.add('padding-bottom') : null;
+  
+});
+
+ 
+// checkButtons.forEach(item => {
+//     item.closest('.col-lg-6').classList.add('padding-bottom')
+// })
+
+document.querySelectorAll('.check-button')[1].classList.add("111111")
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 $(document).ready(function() {
     $('.first-screen').slick({

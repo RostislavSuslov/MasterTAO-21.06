@@ -1,7 +1,24 @@
 .calculation-form {
     background: #363A4D;
- 
     border-radius: 20px;
     max-width: 625px;
     padding: 50px 50px 60px ;
+}
+
+
+label[for="fileInput"] {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px dashed rgba(255, 255, 255, 0.2588235294);
+    text-align: center;
+    padding: 11px 10px;
+    margin: 0;
+}
+
+#fileInput {
+    display: none;
+}
+
+.padding-bottom{
+    margin-top: 22px;
 }
