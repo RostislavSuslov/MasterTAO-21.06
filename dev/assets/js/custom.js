@@ -18,10 +18,11 @@ document.getElementById('fileInput').onchange = function () {
 const checkButtons = document.querySelectorAll('.check-button');
 console.log(checkButtons);
 
-checkButtons.forEach(item => {
+checkButtons.forEach((item, index) => {
   const colParent = item.closest('.col-lg-6');
    colParent ? colParent.classList.add('padding-bottom') : null;
-  
+
+   index === 5 ? item.classList.add("bg-warning") : null;
 });
 
  
@@ -29,7 +30,7 @@ checkButtons.forEach(item => {
 //     item.closest('.col-lg-6').classList.add('padding-bottom')
 // })
 
-document.querySelectorAll('.check-button')[1].classList.add("111111")
+document.querySelectorAll('.check-button')[1].classList.add("this-is-legasy-code")
  
 
 
