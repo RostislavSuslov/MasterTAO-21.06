@@ -1,0 +1,67 @@
+<section class="calculation">
+    <div class="container">
+        <div class="template-title col-lg-7">
+            <h2>Получить рассчет стоимости доставки вашего груза</h2>
+        </div>
+        <form class="calculation-form">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-box">
+                        <label for="product-category">Категория товара:</label>
+                        <input type="text" id="product-category" name="product-category" placeholder="Категория товара" value="Хорошая Категория">
+                    </div>
+                    <div class="input-box">
+                        <label for="product-weight">Вес груза (кг):</label>
+                        <input type="number" id="product-weight" name="product-weight"  placeholder="Введите вес" value="10">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-box">
+                        <label for="product-price">Стоимость груза:</label>
+                        <input type="number" id="product-price" name="product-price" placeholder="Введите стоимость">
+                    </div>
+                    <div class="input-box">
+                        <label for="product-volume">Объем груза (м3):</label>
+                        <input type="number" id="product-volume" name="product-volume" placeholder="Введите объем">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-box">
+                        <div class="check-button">
+                            <input id="Insurance" type="checkbox" checked name="Insurance">
+                            <label for="Insurance">Страховка</label>
+                        </div>
+                        <div class="check-button">
+                            <input id="checkbox2" type="checkbox" name="terms2">
+                            <label for="checkbox2">Таможенное оформление</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-box">
+                        <label for="product-tnCode">Код ТН ВЭД:</label>
+                        <input type="text" id="product-tnCode" name="product-tnCode" placeholder="Введите код">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="input-box">
+                        <!-- <label for="fname">First name:</label> -->
+                        <div id="file-name"></div>
+                        <input type="file" id="fileInput" name="file">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="input-box">
+                        <button type="submit" class="btn btn-primary btn-lg">Следующий шаг<img src="assets/img/icon-arrow-left.svg" class="icon" alt="icon"></button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

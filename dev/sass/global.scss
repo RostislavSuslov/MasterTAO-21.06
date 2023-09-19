@@ -515,6 +515,8 @@ section {
     margin-bottom: 17px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    
     label {
         font-weight: 600;
         font-size: 15px;
@@ -527,6 +529,8 @@ section {
         padding: 16px 10px;
         border: none;
         transition: .2s;
+        width: 100%;
+        
         &:focus-visible {
             outline: none;
         }

@@ -4,7 +4,14 @@ burger.addEventListener('click', function() {
     burger.classList.toggle('is-active')
 })
 
-
+document.getElementById('fileInput').onchange = function () {
+  
+    //short name
+    // document.getElementById('file-name').innerHTML = this.files[0].name;
+    
+    //long name
+    document.getElementById('file-name').innerHTML = this.value;
+};
 
 $(document).ready(function() {
     $('.first-screen').slick({
