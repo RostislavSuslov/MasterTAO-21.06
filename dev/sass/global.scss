@@ -124,7 +124,8 @@ ul {
 }
 
 .check-button {
-    margin-bottom: 14px;
+    margin-bottom: 6px;
+    padding-left: 2px;
 }
 
 /*scss*/
@@ -143,8 +144,8 @@ ul {
 
     +label {
         display: flex;
+        align-items: center;
         cursor: pointer;
-        letter-spacing: -0.4px;
 
         &:before {
             content: "";
@@ -154,7 +155,7 @@ ul {
             border-radius: 4px;
             width: 24px;
             height: 24px;
-            margin-right: 9px;
+            margin-right: 10px;
 
         }
 
@@ -512,21 +513,24 @@ section {
 }
 
 .input-box {
-    margin-bottom: 17px;
+    margin-bottom: 19px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    
+    position: relative;
     label {
         font-weight: 600;
         font-size: 15px;
         line-height: 126%;
+        margin-top: 1px;
         margin-bottom: 6px;
     }
 
     input {
         border-radius: 10px;
-        padding: 16px 10px;
+        padding: 17px 20px;
+        font-size: 14px;
+        min-height: 56px;
         border: none;
         transition: .2s;
         width: 100%;
@@ -538,8 +542,13 @@ section {
         &:hover {
             box-shadow: 0px 0px 4px 2px $color-primary;
         }
+
         &:focus {
             box-shadow: 0px 0px 4px 2px $color-secondary;
+        }
+
+        &::placeholder {
+            color: #CBCBCB;
         }
     }
 }

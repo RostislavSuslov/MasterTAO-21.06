@@ -1,7 +1,6 @@
 @media screen and (max-width: 991px) {
 
-
-
+   
     h1,
     .h1 {
         font-size: 32px;
@@ -31,6 +30,11 @@
     // .h6 {
     //     font-size: 18px;
     // }
+
+    section, .first-screen {
+        margin-bottom: 60px;
+    }
+
     .container {
         padding: 0 20px;
     }
@@ -74,6 +78,30 @@
         text-align: center;
         background-color: $bg-secondary;
         transform: translate(0, 16px);
+    }
+
+    .template-title {
+        margin-bottom: 45px;
+        h2 {
+            text-align: center;
+        }
+    }
+
+    .template-title.col-lg-7{
+        margin-bottom: 55px;
+
+        h2:after {
+            position: absolute;
+            left: 50%;
+            margin: 0;
+            bottom: -1px;
+            transform: translate(-50%, 0);
+        }
+    } 
+    
+    .advantage-title {
+        padding: 0 20px;
+        font-weight: 400;
     }
 
     .first-screen {
@@ -139,13 +167,27 @@
         }
     }
 
-    .template-title {
-        margin-bottom: 45px;
+  
+    .calculation-form {
+        padding: 50px 26px 15px;
+        margin: 0 auto;
+        .btn {
+            max-width: 275px;
+            width: calc(100% - 10px);
+            margin: 0 auto;
+            .icon {
+                margin: 0px -20px 0 64px;
+            }
+        }
     }
-
-
-    .advantage-title {
-        padding: 0 20px;
-        font-weight: 400;
+    .calculation-decoration {
+        display: none;
+    }
+    .padding-bottom {
+        margin-top: 8px;margin-bottom: -17px;
+    }
+    .check-button {
+        margin-bottom: 7px;
+        padding-left: 4px;
     }
 }

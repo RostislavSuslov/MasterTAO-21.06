@@ -2,6 +2,8 @@
     @extend section;
     max-width: calc(100% - 84px);
     position: relative;
+    margin-bottom: 96px;
+    
     &__title {
         @extend h1; 
         margin-bottom: 8px;
