@@ -1,7 +1,29 @@
 .carousel-template {
     margin: 0 -15px;
+
     .slide-item {
         padding: 0 15px;
+    }
+
+    .slick-dots {
+        margin-top: 32px;
+    }
+
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+
+    .slick-prev {
+     
+        left: -77px;
+        z-index: 1;
+        transform: translate(0, -50%) rotate(180deg);
+    }
+
+    .slick-next {
+        right: -77px;
     }
 }
 
@@ -19,28 +41,34 @@
     padding: 0 20px 27px;
     text-align: center;
     border: none;
+
     &-title {
         margin-bottom: 12px;
     }
+
     &-options {
         display: flex;
         justify-content: space-between;
         max-width: 210px;
         width: 100%;
         margin: 0 auto 8px;
+
         &-item {
             display: flex;
             align-items: center;
+
             img {
                 margin-right: 8px;
                 max-width: 24px;
                 max-height: 24px;
-            
+
             }
         }
     }
+
     &-price {
         margin-bottom: 22px;
+
         span {
             &:first-child {
                 color: #A3A3A3;
@@ -49,8 +77,10 @@
                 font-size: 22px;
                 font-style: normal;
                 font-weight: 400;
-                line-height: 124.5%; /* 27.39px */
+                line-height: 124.5%;
+                /* 27.39px */
             }
+
             &:last-child {
                 color: #FFF;
                 font-family: Proxima Nova;
@@ -60,6 +90,7 @@
                 line-height: 124.5%;
             }
         }
+
         strong {
             color: #FFF;
             font-family: Proxima Nova;
@@ -69,9 +100,11 @@
             line-height: 124.5%;
         }
     }
+
     .btn-row {
         display: flex;
         justify-content: space-between;
+
         .btn {
             width: 153px;
             padding: 13px 10px;
@@ -80,10 +113,3 @@
         }
     }
 }
-
-
-
-
-
-
-

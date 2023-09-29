@@ -1,0 +1,31 @@
+.services  {
+    .card-img-box {
+        position: absolute;
+        left: 20px;
+        top: 0;
+        z-index: 0;
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(0deg, rgba(4, 5, 17, 0.91) 0%, rgba(88, 88, 88, 0.00) 100%);
+        }
+    }
+    .card-title,
+    .card-description,
+    .btn-row {
+        z-index: 1;
+    }
+
+    .card {
+        justify-content: flex-end;
+        text-align: left;
+    }
+}
+
+.card-description {
+    margin-bottom: 14px;
+}

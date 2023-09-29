@@ -52,10 +52,28 @@ $('.carousel-template').each(function () {
         infinite: true, // Бесконечная прокрутка карусели
         slidesToShow: 3, // Отображать 3 слайда одновременно
         slidesToScroll: 1, // Прокручивать по 1 слайду за раз
-
-        // Настройка стрелок для навигации по карусели:
-        prevArrow: slider.closest('.container').find('.slick-prev'), // Ищем элемент с классом 'slick-prev' в родительском контейнере c классом .container и используем его как кнопку "назад"
-        nextArrow: slider.closest('.container').find('.slick-next'), // Ищем элемент с классом 'slick-next' в родительском контейнере c классом .container и используем его как кнопку "вперед"
+         responsive: [
+            {
+              breakpoint: 1346,
+              settings: {
+                slidesToShow: 2,
+               }
+            },
+            {
+                breakpoint: 955,
+                settings: {
+                  slidesToShow: 1,
+                 }
+            },
+            {
+                breakpoint:600,
+                settings: {
+                  slidesToShow: 1,
+                  dots: true,
+                  arrows: false,
+                 }
+            },
+        ]
     });
 });
 });
